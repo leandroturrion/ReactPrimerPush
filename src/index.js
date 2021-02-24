@@ -34,7 +34,7 @@ function getGreeting(user){
 const name = "Leandro"
 
 
-const element = <div>{getGreeting(user)}</div>
+const element = <div>{getGreeting()}</div>
 
 const container = document.getElementById("root")
 
