@@ -12,3 +12,7 @@
 
 SI ES UN COMPONENTE, HAY QUE DEFINIRLO CON SUS ETIQUETAS <componente/>
 SIEMPRE RESPETAR LAS MAYUSCULAS EN CADA CMPONENTE 
+
+para las propiedades (props) puedo asignarle todo junto a una constante
+de esta manera =====>   
+ const {title, description, img, rigthColor, leftColor} = this.props

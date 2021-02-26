@@ -1,22 +1,29 @@
 import React from "react"
 import imagenDefault from "../images/exercise.png"
 import "./style/Card.css"
+import circlesImg from "../images/circles.png"
 
 
 class Card extends React.Component{
         render(){
+            const {title, description, img, rigthColor, leftColor} = this.props
         return (
             
-            <div className="card mx-auto Fitness-Card">
+            <div className="card mx-auto Fitness-Card"
+                
+           style={{
+               backgroundImage: `url(${circlesImg}), linear-gradient(to right, ${rigthColor}, ${leftColor})`
+           }}>
+
                 <div className="card-body">
                     <div className="row center">
 
                        <div className="col-6">
-                      <img src={imagenDefault} className="float-rigth" />
+                      <img src={img} className="float-rigth" />
                        </div>
                         <div className="col-6 Fitness-Card-Info">
-                        <h1>Titulo 1</h1> 
-                         <p>parrafo piloto loremdigmosle</p> 
+                        <h1>{title}</h1> 
+                         <p>{description}</p> 
                       </div>
 
                     </div>
