@@ -5,6 +5,25 @@ import circlesImg from "../images/circles.png"
 
 
 class Card extends React.Component{
+
+       constructor(props){
+           super(props)
+           this.state = {
+                       
+            image: 'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/bulbasaur.png?alt=media&token=567caf19-af47-414e-a9d4-3854ab24c7dc'
+          
+        }
+       }
+          
+       componentDidMount(){
+           setTimeout(() => {
+          this.setState({
+              image:''
+          })
+           }, 5000 )
+       }
+
+
         render(){
             const {title, description, img, rigthColor, leftColor} = this.props
         return (
@@ -19,7 +38,7 @@ class Card extends React.Component{
                     <div className="row center">
 
                        <div className="col-6">
-                      <img src={img} className="float-rigth" />
+                      <img src={this.state.image} className="float-rigth" />
                        </div>
                         <div className="col-6 Fitness-Card-Info">
                         <h1>{title}</h1> 
