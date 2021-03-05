@@ -18,8 +18,9 @@ class Card extends React.Component{
        componentDidMount(){
            setTimeout(() => {
           this.setState({
-              image:''
-          })
+            image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fas.com%2Ffutbol%2F2020%2F11%2F25%2Finternacional%2F1606289597_341642.html&psig=AOvVaw2_WmZNMpcNSp5sED7nfSzb&ust=1615009131290000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCfs_-3mO8CFQAAAAAdAAAAABAD'
+       
+        })
            }, 5000 )
        }
 
